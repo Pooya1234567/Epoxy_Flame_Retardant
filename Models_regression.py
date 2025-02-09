@@ -92,28 +92,11 @@ y_predict = regressor.predict(X_test_selector)
 mean_squared_error = mean_squared_error(y_test, y_predict)
 root_mean_squard_error = mean_squared_error**0.5
 mean_absolute_error = mean_absolute_error(y_test, y_predict)
-# 94
-#accuracy_score_train = accuracy_score(y_train, y_train_predict)
-#accuracy_score_test = accuracy_score(y_test, y_predict)
-#precision_score = precision_score(y_test, y_predict, average='weighted')
-#recall_score = recall_score(y_test, y_predict, average='weighted')
-#f1_score = f1_score(y_test, y_predict, average='weighted')
+
                                                                         
 print(f"train R2: {regressor.score(X_train_selector, y_train):.3f}")
 print(f"test R2: {regressor.score(X_test_selector, y_test):.3f}")
 
 # Predict EP/BDOPO
 y_generated_structures_predict = regressor.predict(X_generated_structures_selector)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
