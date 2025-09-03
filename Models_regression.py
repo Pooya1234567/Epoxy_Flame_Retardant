@@ -38,7 +38,7 @@ X_generated_structures = dataset_generated_structures
 # split data
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=18)
-# Delta_tensile, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=1)
+# Delta_tensile, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 # Delta_PHRR, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=8)
 # Delta_Tg, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=83)
 
