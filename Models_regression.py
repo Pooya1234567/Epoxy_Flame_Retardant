@@ -38,7 +38,7 @@ X_generated_structures = dataset_generated_structures
 # split data
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=18)
-# Delta_tensile, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+# Delta_tensile, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=1)
 # Delta_PHRR, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=8)
 # Delta_Tg, X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=83)
 
@@ -74,7 +74,7 @@ print(f"{feature_selected}", file=logf, flush=True)
 
 # Regression
 regressor = GradientBoostingRegressor(n_estimators=980, max_depth=3, learning_rate=0.17,random_state=3)
-# Delta_tensile, regressor = GradientBoostingRegressor(n_estimators=1000, max_depth=2, learning_rate=0.2, random_state=9)
+# Delta_tensile, regressor = GradientBoostingRegressor(n_estimators=1200, max_depth=2, learning_rate=0.15, random_state=1)
 # Delta_PHRR, regressor = GradientBoostingRegressor(n_estimators=1200, max_depth=2, learning_rate=0.15, random_state=8)
 # Delta_Tg, regressor = GradientBoostingRegressor(n_estimators=550, max_depth=3, learning_rate=0.17, random_state=1)
 
